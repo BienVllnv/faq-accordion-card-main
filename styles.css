@@ -17,12 +17,16 @@ h1 {
     margin-bottom: 10px;
 }
 
-a, p {
+a {
     text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
+    color: hsl(237, 12%, 33%);
+    border-bottom: 1px solid hsl(240, 5%, 91%);
     display: block;
     padding: 20px 0;
+}
+
+a:hover {
+    color: hsl(14, 88%, 65%);
 }
 
 .container {
@@ -43,6 +47,10 @@ a, p {
     position: absolute;
 }
 
+.images-2 {
+    display: none;
+}
+
 .woman {
     top: 25px;
     left: 125px;
@@ -61,4 +69,42 @@ a, p {
 
 .icon {
     float: right;
+}
+
+@media (max-width: 600px){
+    body {
+        height: 100vh;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        height: 75%;
+        margin: 25% auto 10%;
+        padding-bottom: 5%;
+        flex-direction: column;
+    }
+
+    .images {
+        display: none;
+    }
+
+    .images-2 {
+        display: block;
+        position: absolute;
+    }
+
+    .woman-2 {
+        top: -18%;
+        left: 10%;
+    }
+
+    .pattern-2 {
+        top: 0;
+        right: 18%;
+    }
+
 }
