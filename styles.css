@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     position: relative;
+    overflow: hidden;
 }
 
 h1 {
@@ -35,7 +36,7 @@ a, p {
 
 .content {
     padding: 7% 10%;
-    width: 60%;
+    flex-basis: 60%;
 }
 
 .images {
@@ -58,3 +59,12 @@ a, p {
     left: -360px;
 }
 
+@media(min-width:375px){
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        margin: 10%;
+    }
+}
