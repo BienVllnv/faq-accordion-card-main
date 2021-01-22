@@ -58,13 +58,3 @@ a, p {
     top: -350px;
     left: -360px;
 }
-
-@media(min-width:375px){
-    body {
-        height: 100vh;
-    }
-
-    .container {
-        margin: 10%;
-    }
-}
