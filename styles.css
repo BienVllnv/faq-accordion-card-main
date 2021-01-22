@@ -58,3 +58,7 @@ a, p {
     top: -350px;
     left: -360px;
 }
+
+.icon {
+    float: right;
+}
